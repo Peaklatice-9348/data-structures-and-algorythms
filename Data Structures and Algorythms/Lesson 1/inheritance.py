@@ -16,10 +16,6 @@ class Car:
     
 class SUV(Car):
     def __init__(self,brand,model,fuel,color,transmission,turbo):
-        self.brand = brand
-        self.model = model
-        self.fuel = fuel
-        self.color = color
         Car.__init__(self,brand,model,fuel,color)
         self.transmission = transmission
         self.turbo = turbo
